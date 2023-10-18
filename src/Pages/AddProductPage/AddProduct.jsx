@@ -15,16 +15,16 @@ const AddProduct = () => {
         const rating = form.rating.value;
     
 
-        const newCoffee = { name, photo, brand, type, price, details, rating }
-        console.log(newCoffee);
+        const newProduct = { name, photo, brand, type, price, details, rating }
+        console.log(newProduct);
 
         // send data to the server
-        fetch('http://localhost:5000/coffee', {
+        fetch('http://localhost:5000/products', {
             method: "POST",
             headers :{
                 'content-type' : 'application/json'
             },
-            body: JSON.stringify(newCoffee)       
+            body: JSON.stringify(newProduct)       
             
         })
             .then(res => res.json())
@@ -33,11 +33,14 @@ const AddProduct = () => {
                 if(data.insertedId){
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Coffee Added Successfully',
+                        text: 'Product Added Successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                       })
+                     
                 }
+                form.reset()
+
             })
 
 

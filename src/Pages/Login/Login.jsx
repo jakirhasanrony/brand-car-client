@@ -43,7 +43,7 @@ const Login = () => {
     }
 
     const handleGoogleLogin = () => {
-        console.log("google btn clicked");
+      
         signInWithGoogle()
             .then(result => {
                 console.log(result.user)
