@@ -1,19 +1,28 @@
-import { NavLink } from "react-router-dom";
-import moment from 'moment';
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProviders";
+
 
 const Navbar = () => {
+    const { user, userLogOut } = useContext(AuthContext);
+    const handleSignOut = () => {
+        userLogOut()
+            .then()
+            .catch()
+
+    }
 
     const navLinks = <>
-    <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/'>Home</NavLink></li>
-    <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/login'>Login</NavLink></li>
-    <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/registration'>Registration</NavLink></li>
-    <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/addproduct'> Add Product</NavLink></li>
-    <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/mycart'>My Cart</NavLink></li>
-  
+        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/'>Home</NavLink></li>
+        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/login'>Login</NavLink></li>
+        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/register'>Registration</NavLink></li>
+        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/addproduct'> Add Product</NavLink></li>
+        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/mycart'>My Cart</NavLink></li>
 
 
 
-</>
+
+    </>
     return (
         <div className="navbar bg-base-100 px-20 shadow-lg">
             <div className="navbar-start">
@@ -25,7 +34,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                
+
                 <div className="w-8 md:w-24 rounded-full">
                     <img src="https://i.ibb.co/bJbd7P6/photo-2023-10-18-09-21-55.jpg" alt="" />
                 </div>
@@ -37,12 +46,40 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
-            {/* <div className=" navbar-end">
-                <a className="btn">Button</a>
-                <p className=" md:text-lg md:font-bold text-gray-600">
-                    {moment().format("ddd, MMM D, YY, h:mm:ss a")}
-                    </p>
-            </div> */}
+            <div className="navbar-end mr-12">
+
+                {
+                    user ?
+                        <div className="flex justify-center items-center gap-3">
+                            <div>
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img src={user.photoURL} />
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div>
+                                <p className="text-lg font-bold text-gray-500">{user.displayName}</p>
+
+                            </div>
+                            <div>
+                                <button onClick={handleSignOut} className="btn">Sign Out</button>
+                            </div>
+                        </div>
+                        :
+                        <div className="flex justify-end items-center gap-3">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src="https://i.ibb.co/vYKK4tB/user.png" />
+                                </div>
+                            </label>
+                            <Link to='/login'> <button className="btn">Login</button></Link>
+                        </div>
+                }
+
+
+            </div>
         </div>
     );
 };
