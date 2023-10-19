@@ -4,7 +4,7 @@ const Brand = ({ card }) => {
     const { brand_name, image_link, id } = card;
     return (
         <div  >
-            <Link to={`/card/${id}`}>
+            <Link to={`/card/${brand_name}`}>
                 <div className="card h-[350px]  bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
                         <img src={image_link} alt="" className="rounded-xl" />

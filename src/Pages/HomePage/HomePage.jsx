@@ -3,7 +3,10 @@ import Brand from "../../Components/HomePageComponent/Brand";
 import Banner from "../../Components/HomePageComponent/Banner";
 
 const HomePage = () => {
+  
     const cardBrands = useLoaderData();
+    // console.log(cardBrands)
+  
     return (
         <div>
             <div className="max-w-6xl mx-auto p-8">
