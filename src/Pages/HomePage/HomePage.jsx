@@ -1,6 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Brand from "../../Components/HomePageComponent/Brand";
 import Banner from "../../Components/HomePageComponent/Banner";
+import WhyChooseUs from "../../Components/HomePageComponent/WhyChooseUs";
+import OurQualities from "../../Components/HomePageComponent/OurQualities";
 
 const HomePage = () => {
   
@@ -23,6 +25,12 @@ const HomePage = () => {
                     >
                     </Brand>)
                 }
+            </div>
+            <div className=" flex justify-center items-center max-w-6xl border-8 rounded-lg shadow-lg my-4 mx-auto ">
+                <WhyChooseUs></WhyChooseUs>
+            </div>
+            <div className=" flex justify-center items-center max-w-6xl border-8 rounded-lg shadow-lg my-4 mx-auto ">
+                <OurQualities></OurQualities>
             </div>
            
         </div>
