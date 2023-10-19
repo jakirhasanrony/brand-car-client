@@ -19,7 +19,10 @@ const SingleBrandProducts = ({ singleProduct }) => {
                     </div>
                     <p className="text-center text-gray-600 font-semibold">Ratings out of 5: {rating}</p>
                     <div >
-                        <button className="btn my-4 btn-block bg-gray-500 text-white">Product Details</button>
+                        <Link to={`/productDetails/${_id}`}>
+                            <button className="btn my-4 btn-block bg-gray-500 text-white">Product Details</button>
+                        </Link>
+
                         <Link to={`/updateProduct/${_id}`}>
                             <button className="btn mb-4 btn-block bg-gray-500
                          text-white">Update Product</button>

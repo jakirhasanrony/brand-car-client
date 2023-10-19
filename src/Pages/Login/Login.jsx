@@ -92,15 +92,16 @@ const Login = () => {
 
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Login</button>
+                        <button className="btn btn-block bg-black text-white">Login</button>
                     </div>
+                    
                 </form>
                 <p className="text-center text-gray-500  ">Do not have an account? Please <Link className="font-bold text-blue-500" to="/register">Register</Link></p>
             </div>
             <div className="flex justify-center items-center">
                 <div>
 
-                    <button onClick={handleGoogleLogin} className="btn  font-bold text-bl bg-purple-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                    <button onClick={handleGoogleLogin} className="btn  font-bold text-bl bg-black text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg">
 
                         <div className="text-blue-500">
                             <FaGoogle></FaGoogle>

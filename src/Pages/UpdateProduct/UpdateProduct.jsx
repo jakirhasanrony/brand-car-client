@@ -103,7 +103,7 @@ const UpdateProduct = () => {
                             <span className="label-text">Product Price</span>
                         </label>
                         <label className="input-group">
-                            <input name="price" type="text" placeholder="enter the price of product" className="input input-bordered w-full" />
+                            <input name="price" defaultValue={price} type="text" placeholder="enter the price of product" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">

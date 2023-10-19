@@ -114,16 +114,11 @@ const Register = () => {
                     </span>
 
                 </div>
-                {/* <div className="form-control">
-                    <label className="label">
-                        <span className="label-text font-bold text-gray-500">Password</span>
-                    </label>
-                    <input type="password" name="password" placeholder="Provide your password here" className="input input-bordered" required />
-
-                </div> */}
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                    <button className="btn btn-block bg-black text-white">Register</button>
                 </div>
+
+               
             </form>
             <p className="text-center
          text-gray-500  mt-8">Already have an account? Please <Link className="font-bold text-blue-500" to="/login">Login</Link></p>

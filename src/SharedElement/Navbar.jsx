@@ -18,7 +18,7 @@ const Navbar = () => {
         <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/register'>Registration</NavLink></li>
         <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/addproduct'> Add Product</NavLink></li>
         <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/mycart'>My Cart</NavLink></li>
-        <li><NavLink className="mr-8 text-lg font-bold text-gray-600" to='/updateProduct'>Update Product</NavLink></li>
+        
 
 
 
