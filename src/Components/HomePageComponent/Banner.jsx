@@ -10,7 +10,7 @@ const Banner = () => {
                         <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
                         <p className="mb-5">Welcome to the ultimate destination for automotive enthusiasts and car lovers alike. Our website is your key to unlocking a world of automotive dreams. Whether you are in pursuit of sleek, high-performance machines that will leave your heart racing, or you prefer the classic elegance of timeless automobiles, we have got it all.</p>
                         <Link to="/login">
-                            <button className="btn btn-primary">To purchase First login please</button></Link>
+                            <button className="btn bg-black text-white">To purchase First login please</button></Link>
                     </div>
                 </div>
             </div>

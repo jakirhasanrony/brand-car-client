@@ -37,7 +37,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="w-8 md:w-24 rounded-full">
-                    <img src="https://i.ibb.co/bJbd7P6/photo-2023-10-18-09-21-55.jpg" alt="" />
+                    <img src="https://i.ibb.co/z5PBZ3d/photo-2023-10-18-09-21-55-removebg-preview.png" alt="" />
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">BrandCar</a>
 

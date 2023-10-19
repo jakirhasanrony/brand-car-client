@@ -47,7 +47,7 @@ const AddProduct = () => {
     }
    
     return (
-        <div className="max-w-5xl my-10 rounded-lg mx-auto bg-[#F4F3F0] p-24">
+        <div className="max-w-5xl my-10  mx-auto  p-24">
             <h2 className="text-3xl text-center pb-10 font-extrabold">Add Product Here</h2>
             <form onSubmit={handleAddProduct}>
                 {/* form name and image row */}
