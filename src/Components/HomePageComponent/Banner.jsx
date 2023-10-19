@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="rounded-lg">
-            <div className="hero h-[500px] " style={{ backgroundImage: 'url(https://i.ibb.co/rwWW3Mp/pagani-huayra.jpg)' }}>
+        <div className=" rounded-lg p-8">
+            <div className="hero h-[500px]  " style={{ backgroundImage: 'url(https://i.ibb.co/rwWW3Mp/pagani-huayra.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60 "></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">

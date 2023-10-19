@@ -9,10 +9,13 @@ const HomePage = () => {
   
     return (
         <div>
-            <div className="max-w-6xl mx-auto p-8">
+            <div className="max-w-6xl mt-10 border-8 rounded-lg shadow-lg mx-auto p-8">
+                <p className="text-center">hey dark mode</p>
+            </div>
+            <div className="max-w-6xl border-8 rounded-lg shadow-lg my-4 mx-auto ">
                 <Banner></Banner>
             </div>
-              <div className="max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-6">
+              <div className="max-w-6xl border-8 rounded-lg shadow-lg mb-8 mx-auto p-8 grid md:grid-cols-2 gap-6">
                 {
                     cardBrands.map(card => <Brand
                     key={card.id}

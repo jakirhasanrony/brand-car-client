@@ -46,7 +46,7 @@ const ProductDetails = () => {
             <div>
             <h2 className="text-center text-6xl mb-10 p-10 shadow-lg font-extrabold">Brand is: {brand_name}</h2>
             </div>
-            <div className="w3-content w3-section mx-auto  " style={{ maxWidth: '50vw' }}>
+            <div className="w3-content w3-section mx-auto border-8 shadow-lg rounded-lg " style={{ maxWidth: '60vw' }}>
                 <img className="mySlides rounded-lg" src="https://i.ibb.co/DbQB0dj/photo-2023-10-19-09-39-11.jpg" alt="Los Angeles" />
                 <img className="mySlides rounded-lg" src="https://i.ibb.co/qR4WhW1/photo-2023-10-19-09-44-33.jpg" alt="Los Angeles" />
                 <img className="mySlides rounded-lg" src="https://i.ibb.co/bBkKKjF/photo-2023-10-19-09-45-31.jpg" alt="Los Angeles" />

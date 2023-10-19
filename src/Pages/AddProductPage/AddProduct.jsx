@@ -57,7 +57,7 @@ const AddProduct = () => {
                             <span className="label-text">Product Name</span>
                         </label>
                         <label className="input-group">
-                            <input name="name" type="text" placeholder="enter product name" className="input input-bordered w-full" />
+                            <input name="name" type="text" required placeholder="enter product name" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">
@@ -65,7 +65,7 @@ const AddProduct = () => {
                             <span className="label-text">Product Image</span>
                         </label>
                         <label className="input-group">
-                            <input name="photo" type="text" placeholder= 
+                            <input name="photo" type="text" required placeholder= 
                             "enter product image url here" className="input input-bordered w-full" />
                         </label>
                     </div>
@@ -78,7 +78,7 @@ const AddProduct = () => {
                             <span className="label-text">Brand Name</span>
                         </label>
                         <label className="input-group">
-                            <input name="brand" type="text" placeholder="enter product brand name here" className="input input-bordered w-full" />
+                            <input name="brand" type="text" required placeholder="enter product brand name here" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">
@@ -86,7 +86,7 @@ const AddProduct = () => {
                             <span className="label-text">Product Type</span>
                         </label>
                         <label className="input-group">
-                            <input name="type" type="text" placeholder="enter type of the product" className="input input-bordered w-full" />
+                            <input name="type" type="text" required placeholder="enter type of the product" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const AddProduct = () => {
                             <span className="label-text">Product Price</span>
                         </label>
                         <label className="input-group">
-                            <input name="price" type="text" placeholder="enter the price of product" className="input input-bordered w-full" />
+                            <input name="price" type="text" required placeholder="enter the price of product" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">
@@ -105,7 +105,7 @@ const AddProduct = () => {
                             <span className="label-text">Short description</span>
                         </label>
                         <label className="input-group">
-                            <input name="details" type="text" placeholder="enter the description of the product" className="input input-bordered w-full" />
+                            <input name="details" type="text" required placeholder="enter the description of the product" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ const AddProduct = () => {
                             <span className="label-text">Rating </span>
                         </label>
                         <label className="input-group">
-                            <input name="rating" type="text" placeholder="enter the ratings out of 5" className="input input-bordered w-full" />
+                            <input name="rating" type="text" required placeholder="enter the ratings out of 5" className="input input-bordered w-full" />
                         </label>
                     </div>
 
