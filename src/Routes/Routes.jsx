@@ -7,6 +7,7 @@ import Register from "../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AddProduct from "../Pages/AddProductPage/AddProduct";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 
 
 
@@ -19,19 +20,18 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <HomePage></HomePage>,
-                loader: ()=> fetch("/data.json"),
-                
+                loader: () => fetch("/data.json"),
+
             },
             {
                 path: '/card/:brand_name',
                 element: <ProductDetails></ProductDetails>,
-                loader: ()=> fetch("http://localhost:5000/products"),
-                
+                loader: () => fetch("http://localhost:5000/products"),
+
             },
-            
             {
-                path:'/login',
-                element:<Login></Login>
+                path: '/login',
+                element: <Login></Login>
             },
             {
                 path: '/register',
@@ -39,8 +39,14 @@ const router = createBrowserRouter([
             },
             {
                 path: '/addproduct',
-                element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>
-            }
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+            },
+            {
+                path: '/updateProduct/:id',
+                element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+
+            },
         ]
     }
 ]);
