@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 const SingleProductDetails = () => {
     const singleProduct = useLoaderData();
-    const { brand, name, details, photo, price, rating, type, _id } = singleProduct;
+    const {  name, details, photo } = singleProduct;
 
     return (
         <div className="flex justify-center items-center ">
