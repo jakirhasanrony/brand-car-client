@@ -53,8 +53,8 @@ const UpdateProduct = () => {
 
 
     return (
-        <div className="max-w-5xl my-10  mx-auto  p-24">
-            <h2 className="text-3xl text-center pb-10 font-extrabold">Update Product Here</h2>
+        <div className="max-w-5xl my-10  mx-auto p-24">
+            <h2 className="text-xl md:text-3xl text-center pb-10 font-extrabold">Update Product Here</h2>
             <form onSubmit={handleUpdateProduct}>
                 {/* form name and image row */}
                 <div className="md:flex mb-8">

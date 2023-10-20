@@ -43,7 +43,7 @@ const SingleProductDetails = () => {
 
     return (
         <div className="flex justify-center items-center ">
-            <div className="p-10 hero max-w-6xl min-h-[70vh]  my-16 ">
+            <div className=" hero max-w-6xl min-h-[70vh]  my-16 ">
                 <div className="hero-content flex-col lg:flex-row">
                     <img src={photo} className="max-w-sm rounded-lg shadow-2xl" />
                     <div className="ml-3">
