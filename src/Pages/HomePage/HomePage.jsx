@@ -30,7 +30,7 @@ const HomePage = () => {
     return (
         <div>
 
-            <div className="max-w-6xl mt-10 border-8 shadow-lg  mx-auto p-8 flex justify-center items-center">
+            <div className="max-w-6xl mt-10 border-8 rounded-lg shadow-lg  mx-auto p-8 flex justify-center items-center">
                 <h2 className="mr-2 text-4xl font-extrabold">To toggle the theme click on the icon:</h2>
                 <label className="swap swap-rotate">
 
