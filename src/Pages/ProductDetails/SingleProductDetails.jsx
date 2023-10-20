@@ -19,7 +19,7 @@ const SingleProductDetails = () => {
             const user_id = user.uid;
             const cartProduct = { user_id, newUniqueCart };
 
-            fetch(`http://localhost:5000/user-products/${user_id}`, {
+            fetch(` https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/user-products/${user_id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
