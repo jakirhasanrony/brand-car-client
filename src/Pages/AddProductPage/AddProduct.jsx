@@ -75,15 +75,23 @@ const AddProduct = () => {
                 <div className=" md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Brand Name: Rolls-Royce, Jaguar Land Rover, Bugatti, Ferrari, Lamborghini, Porsche </span>
+                            <span className="label-text">Brand Name</span>
                         </label>
-                        <label className="input-group">
-                            <input name="brand" type="text" required placeholder="enter product brand name here" className="input input-bordered w-full" />
+                        <label className="select">
+                            <select name="brand" required className="select select-bordered w-full">
+                                <option value="">Select Brand</option>
+                                <option value="Rolls-Royce">Rolls-Royce</option>
+                                <option value="Jaguar Land Rover">Jaguar Land Rover</option>
+                                <option value="Bugatti">Bugatti</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Porsche">Porsche</option>
+                            </select>
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">
                         <label className="label">
-                            <span className="label-text">Product Type: Car, Luggage Collection, Electronics and Audio Systems, Tires and Wheels ,Automotive Tools etc</span>
+                            <span className="label-text">Product Type</span>
                         </label>
                         <label className="input-group">
                             <input name="type" type="text" required placeholder="enter type of the product" className="input input-bordered w-full" />
