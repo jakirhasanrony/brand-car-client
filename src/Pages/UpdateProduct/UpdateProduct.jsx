@@ -24,7 +24,7 @@ const UpdateProduct = () => {
         console.log(updatedProduct);
 
         // send data to the server
-        fetch(` https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products/${_id}`, {
+        fetch(`https://brand-car-server.vercel.app/products/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

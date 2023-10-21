@@ -9,7 +9,7 @@ const AllProvider = ({children}) => {
     // const [allProducts, setAllProducts] = useState([]);
 
     // useEffect(()=>{
-    //     fetch(' https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products')
+    //     fetch('https://brand-car-server.vercel.app/products')
     //     .then(res => res.json())
     //     .then(data => setAllProducts(data))
     // }, [])

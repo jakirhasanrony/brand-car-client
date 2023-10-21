@@ -11,7 +11,7 @@ const MyCart = () => {
     const allProducts = useLoaderData();
 
     useEffect(() => {
-        fetch(` https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/user-products/${user.uid}`)
+        fetch(`https://brand-car-server.vercel.app/user-products/${user.uid}`)
         .then(res => res.json())
         .then(data => setUniqueCart(data.newUniqueCart))
     }, [user, setUniqueCart])

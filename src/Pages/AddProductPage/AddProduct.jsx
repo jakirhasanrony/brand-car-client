@@ -19,7 +19,7 @@ const AddProduct = () => {
         console.log(newProduct);
 
         // send data to the server
-        fetch(' https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products', {
+        fetch('https://brand-car-server.vercel.app/products', {
             method: "POST",
             headers :{
                 'content-type' : 'application/json'

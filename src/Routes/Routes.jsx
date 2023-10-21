@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: '/card/:brand_name',
                 element: <ProductDetails></ProductDetails>,
-                loader: () => fetch(" https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products"),
+                loader: () => fetch("https://brand-car-server.vercel.app/products"),
 
             },
             {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             {
                 path: '/myCart/',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader: () => fetch(' https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products')
+                loader: () => fetch('https://brand-car-server.vercel.app/products')
             },
             {
                 path: '/addproduct',
@@ -51,12 +51,12 @@ const router = createBrowserRouter([
             {
                 path: '/productDetails/:id',
                 element: <PrivateRoute><SingleProductDetails></SingleProductDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(` https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-car-server.vercel.app/products/${params.id}`)
             },
             {
                 path: '/updateProduct/:id',
                 element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-                loader: ({ params }) => fetch(` https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-car-server.vercel.app/products/${params.id}`)
 
             },
         ]

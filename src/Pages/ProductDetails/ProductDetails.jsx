@@ -7,7 +7,7 @@ const ProductDetails = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const apiUrl = " https://brand-car-server-5ruoo15b2-jakir-hasan-ronys-projects.vercel.app/products";
+        const apiUrl = "https://brand-car-server.vercel.app/products";
         fetch(apiUrl)
             .then((response) => response.json())
             .then((data) => {
