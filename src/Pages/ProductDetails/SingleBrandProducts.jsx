@@ -11,7 +11,7 @@ const SingleBrandProducts = ({ singleProduct }) => {
                     <img src={photo} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">{brand}</h2>
+                    <h2 className="card-title">{name}</h2>
                     <div className="flex flex-wrap gap-2 justify-center items-center text-gray-600 font-semibold">
                         <p>Type: {type}</p>
                         <p>Price: {price}</p>
