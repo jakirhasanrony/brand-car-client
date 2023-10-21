@@ -13,7 +13,7 @@ const AddProduct = () => {
         const price = form.price.value;
         const details = form.details.value;
         const rating = form.rating.value;
-    
+
 
         const newProduct = { name, photo, brand, type, price, details, rating }
         console.log(newProduct);
@@ -21,23 +21,23 @@ const AddProduct = () => {
         // send data to the server
         fetch('https://brand-car-server.vercel.app/products', {
             method: "POST",
-            headers :{
-                'content-type' : 'application/json'
+            headers: {
+                'content-type': 'application/json'
             },
-            body: JSON.stringify(newProduct)       
-            
+            body: JSON.stringify(newProduct)
+
         })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if(data.insertedId){
+                if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
                         text: 'Product Added Successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
-                      })
-                     
+                    })
+
                 }
                 form.reset()
 
@@ -45,7 +45,7 @@ const AddProduct = () => {
 
 
     }
-   
+
     return (
         <div className="max-w-5xl my-10  mx-auto  p-24">
             <h2 className="text-xl md:text-3xl text-center pb-10 font-extrabold">Add Product Here</h2>
@@ -65,8 +65,8 @@ const AddProduct = () => {
                             <span className="label-text">Product Image</span>
                         </label>
                         <label className="input-group">
-                            <input name="photo" type="text" required placeholder= 
-                            "enter product image url here" className="input input-bordered w-full" />
+                            <input name="photo" type="text" required placeholder=
+                                "enter product image url here" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const AddProduct = () => {
                 <div className=" md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Brand Name</span>
+                            <span className="label-text">Brand Name: Rolls-Royce, Jaguar Land Rover, Bugatti, Ferrari, Lamborghini, Porsche </span>
                         </label>
                         <label className="input-group">
                             <input name="brand" type="text" required placeholder="enter product brand name here" className="input input-bordered w-full" />
@@ -83,7 +83,7 @@ const AddProduct = () => {
                     </div>
                     <div className="form-control md:w-1/2 ml-0 md:ml-4">
                         <label className="label">
-                            <span className="label-text">Product Type</span>
+                            <span className="label-text">Product Type: Car, Luggage Collection, Electronics and Audio Systems, Tires and Wheels ,Automotive Tools etc</span>
                         </label>
                         <label className="input-group">
                             <input name="type" type="text" required placeholder="enter type of the product" className="input input-bordered w-full" />
