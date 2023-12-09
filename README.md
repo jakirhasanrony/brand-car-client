@@ -1,4 +1,5 @@
 
+# Technology: HTML, CSS, Tailwind, DaisyUI, React, Firebase, MongoDB
 # Client-side live link :
 https://brand-car-client.web.app/
 
